@@ -1,5 +1,7 @@
+import { myResponse } from "@/typings";
 import axios, { AxiosInstance, AxiosRequestConfig, AxiosResponse, AxiosError } from "axios";
 import { ElMessage } from 'element-plus'
+
 
 // 创建实例
 const service: AxiosInstance = axios.create({
@@ -25,7 +27,7 @@ service.interceptors.request.use(
 
 // 响应拦截器
 service.interceptors.response.use(
-    (response: AxiosResponse) => {
+    (response: myResponse) => {
         if (response.status === 200) {
             // 请求成功
             if (response?.data) return response.data

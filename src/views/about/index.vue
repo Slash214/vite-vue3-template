@@ -3,11 +3,7 @@
   <div>12312312</div>
 </template>
 
-<script lang="ts">
-export default {
-    setup() {
-    },
-}
+<script lang="ts" setup>
 </script>
 
 <style>

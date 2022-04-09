@@ -2,6 +2,7 @@ const baseURL = 'https://www.fastmock.site/mock/ad6546ec6973c684608e11227e797c5e
 import request from './request'
 const prdURL = 'https://www.lovehaha.cn/api'
 
+
 interface indexData {
     pageIndex?: number,
     pageSize?: number
@@ -35,7 +36,6 @@ export function getDetails(params: details) {
     })
 }
 
-// https://lovehaha.cn/api/commit/usercomment?
 export function getCommit(params: {}) {
    return request({
        method: 'GET',

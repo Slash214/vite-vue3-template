@@ -1,7 +1,4 @@
-/*
- * 文本溢出隐藏 $clamp: 几行
- */
- @mixin text--hidden($clamp: 1) {
+@mixin text--hidden($clamp: 1) {
     overflow: hidden;
     text-overflow: ellipsis;
     display: -webkit-box;

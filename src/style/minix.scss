@@ -1,0 +1,37 @@
+/*
+ * 文本溢出隐藏 $clamp: 几行
+ */
+ @mixin text--hidden($clamp: 1) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    word-break: break-word;
+    -webkit-line-clamp: $clamp;
+    -webkit-box-orient: vertical;
+}
+
+@mixin flex--auto($al: false, $jc: false, $dir: row) {
+    display: flex;
+    @if $al {
+        align-items: center;
+    }
+    @if $jc {
+       justify-content: $jc;
+    }
+    flex-direction: $dir;
+}
+
+@mixin font-set($size: false, $colour: false, $weight: false, $lh: false) {
+    @if $size {
+        font-size: $size;
+    }
+    @if $colour {
+        color: $colour;
+    }
+    @if $weight {
+        font-weight: $weight;
+    }
+    @if $lh {
+        line-height: $lh;
+    }
+}

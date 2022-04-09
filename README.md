@@ -1,13 +1,13 @@
 # Method of use
-> git clone https://github.com/Slash214/vite-vue3-template.git
-> npm install 
-> npm run dev
+> git clone https://github.com/Slash214/vite-vue3-template.git    
+> npm install    
+> npm run dev    
 
 
 # introduce
 > 模板项目
-#### 项目使用到了Vue3 + Vite + Typescript + axios + Elemant-Plus，语法检测使用的eslint
-#### 小伙伴喜欢可以直接git clone 使用
+#### 项目使用到了Vue3 + Vite + Typescript + axios + Elemant-Plus + sass，语法检测使用的eslint
+#### 小伙伴喜欢可以直接git clone 使用，组件可不导入就使用，使用了setup语法糖
 
 
 # Vue 3 + Typescript + Vite
